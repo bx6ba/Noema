@@ -1,6 +1,6 @@
 import numpy as np
 import nnfs
-from nnfs.datasets import spiral_data
+from nnfs.datasets import vertical_data
 
 from Layer_Dense import Layer_Dense
 from Activation_ReLU import Activation_ReLU
@@ -8,7 +8,7 @@ from Activation_Softmax import Activation_Softmax
 
 nnfs.init()
 
-X, y = spiral_data(100, 3)
+X, y = vertical_data(100, 3)
 
 dense1 = Layer_Dense(2, 3)
 activation1 = Activation_ReLU()
